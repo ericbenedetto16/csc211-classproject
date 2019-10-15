@@ -1,5 +1,7 @@
 /Debug
 
+Source.cpp
+
 .gitignore
 
 *.vcxproj*
