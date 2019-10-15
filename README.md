@@ -3,7 +3,7 @@
 Clone the project to your Source Files directory  
 Make sure to not edit any files aside from your own in order to maintain a proper workflow and conflicting commits  
   
-### Accessing the Repo (For Group Leads)  
+### Accessing the Repo (For Grop Leads)  
 Use ```git remote add origin git@github.com:ericbenedetto16/csc211-classproject.git``` to have push access to the repo  
 Use ```git checkout [YOUR TEAM]``` to switch to your team's branch  
   
