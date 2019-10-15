@@ -1,4 +1,4 @@
-#include "linetype.h"
+#include "lineType.h"
 
 #include <windows.h>
 

@@ -1,13 +1,10 @@
-#include "linetype.h"
+#include "lineType.h"
 #include <iostream>
 
 using namespace std;
 
 int main() {
 	initializeGui();
-
-	LineType test;
-	test.printClass();
 
 	system("pause");
 	return 0;
