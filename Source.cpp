@@ -1,4 +1,4 @@
-#include "lineType.h"
+#include "linetype.h"
 #include <iostream>
 
 using namespace std;
