@@ -3,5 +3,5 @@
 #include <windows.h>
 
 void initializeGui() {
-	SetConsoleTitle("Classes Project");
+	SetConsoleTitle("Classes Project"); 
 }

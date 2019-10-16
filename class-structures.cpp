@@ -1,6 +1,6 @@
 #include "linetype.h"
 
-double LineType::Test(ifstream& infile) {
+double lineType::Test(ifstream& infile){
 	infile >> a;
 	infile >> b;
 	infile >> c;
@@ -13,7 +13,7 @@ double LineType::Test(ifstream& infile) {
 	return a, b, c;
 }
 
-void LineType::setSlope(double a, double b) {
+void lineType::setSlope(double a, double b) {
 	if (a == 0) {
 		cout << "The slope is equal to 0";
 		skip;
