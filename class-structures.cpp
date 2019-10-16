@@ -32,7 +32,3 @@ void lineType::setSlope(double a, double b) {
 		skip;
 	}
 }
-
-void LineType::printClass() {
-	cout << "Hello World\n";
-}
