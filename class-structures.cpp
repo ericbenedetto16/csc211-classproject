@@ -1,6 +1,56 @@
-#include "linetype.h"
+// This includes all of the libraries we need.
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+// #include <string>
+#include <fstream>
 
-double lineType::Test(ifstream& infile){
+#define skip cout << endl;
+
+using namespace std;
+
+class lineType {
+public:
+	// Display the slope to make sure the slope value is correct.
+	void getSlope();
+	// Set the slope - X1, X2, Y1, Y2.
+	void setSlope(double, double);
+	// Boolean to check if the slope is perpendicular or not. False if it isn't.
+
+	bool perpendicular();
+	// Boolean to check if the slope if parallel or not. False if it isn't.
+	bool parallel();
+	// Boolean to check if the slopes are equal or not.
+	bool equal();
+	double findIntersection();
+	double Test(ifstream&);
+private:
+	double slopeEquation();
+	double a, b, c;
+	double slope;
+};
+
+int main() {
+
+	lineType lineOne;
+
+	ifstream infile;
+	infile.open("Text.txt");
+	if (!infile) {
+		cout << "Error opening";
+	}
+
+	lineOne.Test(infile);
+	lineOne.setSlope(10, 2);
+	lineOne.getSlope();
+
+	infile.close();
+
+	system("pause");
+	return 0;
+}
+
+double lineType::Test(ifstream& infile) {
 	infile >> a;
 	infile >> b;
 	infile >> c;
@@ -13,7 +63,8 @@ double lineType::Test(ifstream& infile){
 	return a, b, c;
 }
 
-void lineType::setSlope(double a, double b) {
+void lineType::setSlope(double a, double b)
+{
 	if (a == 0) {
 		cout << "The slope is equal to 0";
 		skip;
@@ -26,9 +77,17 @@ void lineType::setSlope(double a, double b) {
 		skip;
 	}
 	else {
-		cout << "This is your slope: ";
 		slope = a * -1 / b;
-		cout << slope;
+		// cout << slope;
 		skip;
 	}
+}
+
+// This function returns and displays the slope.
+void lineType::getSlope() {
+	cout << "This is your slope: ";
+	skip;
+	cout << slope;
+	skip;
+	cout << "Y = " << slope << "x + " << c;
 }
