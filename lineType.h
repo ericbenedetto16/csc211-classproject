@@ -1,5 +1,6 @@
 #ifndef LINETYPE_H
 #define LINETYPE_H
+#define skip cout << endl;
 
 using namespace std;
 
