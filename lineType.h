@@ -20,7 +20,7 @@ class lineType {
 		// Set the slope - X1, X2, Y1, Y2.
 		void setSlope(double, double);
 		// Boolean to check if the slope is perpendicular or not. False if it isn't.
-		bool perpendicular();
+		bool perpendicular(double, double);
 		// Boolean to check if the slope if parallel or not. False if it isn't.
 		bool parallel();
 		// Boolean to check if the slopes are equal or not.
